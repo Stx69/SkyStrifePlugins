@@ -8,7 +8,7 @@ Basic plugins for iteration.
 
 by 9STX6
 
-!!! Warning: Self Responsibility in Plugin Usage !!!
+!!! [!WARNING]: Self Responsibility in Plugin Usage !!!
 
 Before using any plugins, prioritize self-responsibility:
 
