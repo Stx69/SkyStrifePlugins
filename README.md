@@ -1,4 +1,4 @@
-# Plugins for WEB3 Game SKY STRIFE - The fully onchain RTS built with MUD
+# Plugins for SKY STRIFE - The fully onchain RTS built with MUD
 
 Basic plugins for iteration.
 
