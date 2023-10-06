@@ -10,9 +10,12 @@ by 9STX6
 
 !!! **WARNING:** Self Responsibility in Plugin Usage !!!
 
-Before using any plugins, prioritize self-responsibility:
-Thorough Review: Examine plugin source code and documentation to understand functionality and potential risks.
-Updates Monitoring: Stay vigilant for updates and security patches to ensure ongoing safety.
-Data Privacy: Assess how plugins handle user data, safeguarding privacy.
+**Before using any plugins, prioritize self-responsibility:**
+
+**Thorough Review:** Examine plugin source code and documentation to understand functionality and potential risks.
+
+**Updates Monitoring:** Stay vigilant for updates and security patches to ensure ongoing safety.
+
+**Data Privacy:** Assess how plugins handle user data, safeguarding privacy.
 
 Remember, your due diligence is vital for secure and reliable plugin integration.
