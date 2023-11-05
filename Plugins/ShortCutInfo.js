@@ -111,7 +111,7 @@ input.onKeyPress(
     const selectedUnit = [
       ...runQuery([
         Has(Selected),
-        HasValue(Position, { z: match }),
+        Has(Position),
         Has(Combat),
         Has(Range),
         Has(Stamina),
@@ -122,7 +122,7 @@ input.onKeyPress(
     const selectedStructure = [
       ...runQuery([
         Has(Selected),
-        HasValue(Position, { z: match }),
+        Has(Position),
         Has(StructureType),
       ]),
     ];
