@@ -2,7 +2,7 @@
 // by 9STX6
 //-------------IMPORTS-------
 const {
-  network: { match },
+  network: { matchEntity },
 
   utils: { getOwningPlayer },
 } = networkLayer;
@@ -36,7 +36,10 @@ function getLandsInfoArmor(entity) {
       Has(ArmorModifier),
       Has(MoveDifficulty),
     ]),
-  ];
+  ].filter(
+    (e) =>
+      decodeEntity(Position.metadata.keySchema, e).matchEntity === matchEntity
+  );
 
   const resultLand = [];
 
@@ -117,15 +120,17 @@ input.onKeyPress(
         Has(Stamina),
         Has(UnitType),
       ]),
-    ];
+    ].filter(
+      (e) =>
+        decodeEntity(Position.metadata.keySchema, e).matchEntity === matchEntity
+    );
 
     const selectedStructure = [
-      ...runQuery([
-        Has(Selected),
-        Has(Position),
-        Has(StructureType),
-      ]),
-    ];
+      ...runQuery([Has(Selected), Has(Position), Has(StructureType)]),
+    ].filter(
+      (e) =>
+        decodeEntity(Position.metadata.keySchema, e).matchEntity === matchEntity
+    );
 
     if (!selectedUnit && !selectedStructure) {
       return console.log("Not selected unit or structure");
